@@ -25,7 +25,7 @@
    - Integrated error handling mechanisms to provide meaningful feedback to users in case of invalid input or server errors.
 
 2. **HTTP Requests:**
-   - Established communication with the backend server using Axios to perform CRUD operations and user authentication.
+   - Established communication with the backend server using Axios to perform operations and user authentication.
    - Configured Axios to send HTTP requests with appropriate methods (GET, POST, etc.) and data payloads, ensuring compatibility with backend API endpoints.
    - Utilized Axios interceptors to intercept requests and responses, allowing for centralized handling of common tasks like attaching authorization tokens or handling errors.
 
