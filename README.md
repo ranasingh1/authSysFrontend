@@ -10,7 +10,7 @@
 2. **User Interface:**
    - Prioritized user experience by designing intuitive and aesthetically pleasing user interfaces.
    - Implemented responsive design principles to ensure compatibility across various devices and screen sizes.
-   - Employed modern UI libraries like Material-UI or Bootstrap for consistent and polished UI elements.
+   - Employed modern UI libraries like Tailwind for consistent and polished UI elements.
 
 3. **HTTP Requests:**
    - Adopted Axios, a popular HTTP client for JavaScript, for its simplicity and flexibility.
@@ -20,8 +20,8 @@
 ### Implementation Details
 
 1. **React Components:**
-   - Created modular and reusable components for user registration, login, and protected routes.
-   - Implemented form validation using libraries like Formik or custom validation logic to enhance user input accuracy and prevent submission errors.
+   - Created modular and reusable components for user registration, login, and protected routes(Home).
+   - Implemented input sanitisation to enhance user input accuracy and prevent submission errors.
    - Integrated error handling mechanisms to provide meaningful feedback to users in case of invalid input or server errors.
 
 2. **HTTP Requests:**
