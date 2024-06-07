@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+### Approach and Design Choices
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Frontend:
 
-## Available Scripts
+1. **React.js:**
+   - Chose React.js for its component-based architecture, which facilitates code organization and reusability.
+   - Leveraged React's virtual DOM for efficient rendering and improved performance.
+   - Utilized React's state and lifecycle methods to manage component state and side effects.
 
-In the project directory, you can run:
+2. **User Interface:**
+   - Prioritized user experience by designing intuitive and aesthetically pleasing user interfaces.
+   - Implemented responsive design principles to ensure compatibility across various devices and screen sizes.
+   - Employed modern UI libraries like Material-UI or Bootstrap for consistent and polished UI elements.
 
-### `npm start`
+3. **HTTP Requests:**
+   - Adopted Axios, a popular HTTP client for JavaScript, for its simplicity and flexibility.
+   - Configured Axios interceptors to handle request and response middleware, such as attaching authentication tokens or handling errors globally.
+   - Ensured compatibility with backend APIs by setting up Axios with appropriate request headers and configurations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Implementation Details
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **React Components:**
+   - Created modular and reusable components for user registration, login, and protected routes.
+   - Implemented form validation using libraries like Formik or custom validation logic to enhance user input accuracy and prevent submission errors.
+   - Integrated error handling mechanisms to provide meaningful feedback to users in case of invalid input or server errors.
 
-### `npm test`
+2. **HTTP Requests:**
+   - Established communication with the backend server using Axios to perform CRUD operations and user authentication.
+   - Configured Axios to send HTTP requests with appropriate methods (GET, POST, etc.) and data payloads, ensuring compatibility with backend API endpoints.
+   - Utilized Axios interceptors to intercept requests and responses, allowing for centralized handling of common tasks like attaching authorization tokens or handling errors.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Protected Routes:**
+   - Implemented protected route components using React Router or similar routing libraries to restrict access to authenticated users.
+   - Utilized higher-order components (HOCs) or render props patterns to conditionally render components based on the user's authentication status.
+   - Integrated redirection logic to redirect unauthenticated users to the login page, enhancing security and user experience.
