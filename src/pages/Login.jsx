@@ -21,7 +21,7 @@ const Login = () => {
       navigate("/");
     } catch (error) {
       console.error(error);
-      setError(error.response?.data?.message || "An error occurred.");
+      setError(error.response?.data?.message);
     }
   };
 
