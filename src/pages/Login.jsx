@@ -21,14 +21,14 @@ const Login = () => {
       navigate("/");
     } catch (error) {
       console.error(error);
-      setError(error.response?.data?.message);
+      setError(error.response?.data?.message || "An error occurred.");
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#01AFD1] to-[#4dd0e1]">
       <div className="bg-white p-8 rounded shadow-md w-80">
-        <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
+        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
           Login
         </h2>
         <form onSubmit={handleSubmit}>
@@ -38,6 +38,8 @@ const Login = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="Your Email"
+            required
           />
           <FormInput
             id="password"
@@ -45,18 +47,20 @@ const Login = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Your Password"
+            required
           />
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-200"
+            className="w-full bg-[#01AFD1] hover:bg-[#4dd0e1] text-white font-bold py-3 px-4 rounded-full transition duration-300"
           >
-            Login
+            Sign In
           </button>
-          {error && <p className="text-red-500 text-center mb-4">{error}</p>}
+          {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         </form>
-        <p className="text-center mt-4">
+        <p className="text-center mt-4 text-gray-800">
           Don't have an account?{" "}
-          <Link to="/register" className="text-blue-500 hover:underline">
+          <Link to="/register" className="text-[#01AFD1] hover:underline">
             Register
           </Link>
         </p>

@@ -16,7 +16,6 @@ const Register = () => {
     const sanitizedUsername = sanitizeInput(username);
     const sanitizedEmail = sanitizeInput(email);
     const sanitizedPassword = sanitizeInput(password);
-    console.log(sanitizedEmail, sanitizedPassword, sanitizedUsername);
     e.preventDefault();
     try {
       setErrors([]);
@@ -41,9 +40,9 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#01AFD1] to-[#4dd0e1]">
       <div className="bg-white p-8 rounded shadow-md w-80">
-        <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
+        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
           Register
         </h2>
         {!registered && (
@@ -71,7 +70,7 @@ const Register = () => {
             />
             <button
               type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-200"
+              className="w-full bg-[#01AFD1] hover:bg-[#4dd0e1] text-white font-bold py-2 px-4 rounded transition duration-200"
             >
               Register
             </button>
@@ -89,15 +88,15 @@ const Register = () => {
         {registered && (
           <p className="text-center text-green-500 mb-4">
             Registration successful. Please{" "}
-            <Link to="/login" className="text-blue-500 hover:underline">
-              login
+            <Link to="/login" className="text-[#01AFD1] hover:underline">
+               {" "}  login
             </Link>
             .
           </p>
         )}
-        <p className="text-center mt-4">
+        <p className="text-center mt-4 text-gray-800">
           Already have an account?{" "}
-          <Link to="/login" className="text-blue-500 hover:underline">
+          <Link to="/login" className="text-[#01AFD1] hover:underline">
             Login
           </Link>
         </p>
