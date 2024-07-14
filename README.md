@@ -3,7 +3,7 @@
 #### Frontend:
 
 1. **React.js:**
-   - Chose React.js for its component-based architecture, which facilitates code organization and reusability.
+   - Chose React.js for its component-based architecture, which facilitates code organization and reusability. 
    - Leveraged React's virtual DOM for efficient rendering and improved performance.
    - Utilized React's state and lifecycle methods to manage component state and side effects.
 
